@@ -44,3 +44,11 @@ def analyze_resume(resume_text: str, job_description: str) -> str:
     )
 
     return response.choices[0].message.content
+
+def fetch_all_reviews():
+    query = "SELECT * FROM c"
+    items = list(container.query_items(
+        query=query,
+        enable_cross_partition_query=True
+    ))
+    return items

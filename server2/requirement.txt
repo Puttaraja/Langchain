@@ -4,3 +4,5 @@ python-multipart
 python-dotenv 
 openai 
 pdfplumber
+azure-cosmos
+azure-openai

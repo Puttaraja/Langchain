@@ -61,6 +61,52 @@ body {
   transition: background 0.3s;
 }
 
+.form-button-disabled {
+  background: #1a237e;
+  color: white;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
 .form-button:hover {
   background: #3949ab;
+}
+
+.resume-loader-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.resume-loaded-msg {
+  display: inline-block;
+  background-color: #e8f5e9; /* light green background */
+  color: #2e7d32; /* green text */
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 1rem;
+  font-size: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 128, 0, 0.15);
+}
+
+.resume-loader-description {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f5f7fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #37474f;
+  line-height: 1.6;
+  max-height: 240px;
+  overflow-y: auto;
+  text-align: left;
 }

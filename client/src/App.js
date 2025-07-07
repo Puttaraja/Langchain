@@ -1,36 +1,19 @@
 import React, { useState } from "react";
-import ResumeForm from "./components/Resume/ResumeForm";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ResumeForm from "./components/ResumeForm/ResumeForm";
+import ResumeAnalyzer from "./components/ResumeAnalyzer/ResumeAnalyzer";
 
 function App() {
-  const [result, setResult] = useState(null);
-
-  const handleSubmit = async (formData) => {
-    try {  
-      const response = await fetch("http://localhost:8000/api/review", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
-      setResult(data);
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Something went wrong. Check console.");
-    }
-  };
-
+  const [output, setOutput] = useState("");
   return (
-    <div>
-      <ResumeForm onSubmit={handleSubmit} />
-
-      {result && (
-        <div style={{ whiteSpace: "pre-wrap", padding: "1rem" }}>
-          <h3>Review Result:</h3>
-          <p>{result.message}</p>
-        </div>
-      )}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ResumeForm setOutput={setOutput} />} />
+        <Route path="/review" element={<ResumeAnalyzer output={output.message} />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+

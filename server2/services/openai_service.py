@@ -20,8 +20,16 @@ def analyze_resume(resume_text: str, job_description: str) -> str:
         },
         {
             "role": "user",
-            "content": f"Resume:\n{resume_text}\n\nJob Description:\n{job_description}",
+            "content": resume_text,
         },
+        {
+            "role": "user",
+            "content": job_description,
+        },
+        {
+            "role": "assistant",
+            "content": "Please analyze the resume against the job description and provide feedback on how well the resume matches the job requirements, including strengths and areas for improvement.",
+        }
     ]
 
     response = client.chat.completions.create(

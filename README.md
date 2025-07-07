@@ -33,3 +33,9 @@
   - Areas for Improvement
   - Suggestions to Improve the Resume
   - Final note
+
+
+ ## For Set Up refer below links  
+
+ ### Client Side Set Up: refer Langchain/client/README.md
+ ### Server Side Set Up: refer Langchain/server2/setup.md

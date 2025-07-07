@@ -1,5 +1,5 @@
 const pdfParse = require("pdf-parse");
-const { getOpenAIResponse } = require("../services/openaiService");
+const { getChatCompletion } = require("../services/openaiService");
 
 exports.handleReview = async (req, res) => {
   try {
@@ -10,24 +10,10 @@ exports.handleReview = async (req, res) => {
     const resumeText = await pdfParse(resumeBuffer);
     const resumeContent = resumeText.text;
 
-    // 2. Generate prompt
-    const prompt = `
-Compare the following resume and job description. Give:
-1. Matched skills
-2. Missing skills/keywords
-3. Suggested improvements in resume wording
+    // 2. Get AI result
+    const result = await getChatCompletion(resumeContent, jobDescription);
 
-Resume:
-${resumeContent}
-
-Job Description:
-${jobDescription}
-`;
-
-    // 3. Get response from OpenAI
-    const result = await getOpenAIResponse(prompt);
-
-    // 4. Return to frontend
+    // 3. Send back to frontend
     res.json({ message: result });
   } catch (err) {
     console.error("Error:", err.message);

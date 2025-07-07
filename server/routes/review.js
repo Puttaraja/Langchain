@@ -1,12 +1,10 @@
 const express = require("express");
-const router = express.Router();
 const multer = require("multer");
-const reviewController = require("../controllers/reviewController");
+const { handleReview } = require("../controllers/reviewController");
 
-// File upload config
-const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
+const router = express.Router();
+const upload = multer();
 
-router.post("/review", upload.single("resume"), reviewController.handleReview);
+router.post("/review", upload.single("resume"), handleReview);
 
 module.exports = router;

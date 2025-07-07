@@ -9,11 +9,9 @@
 ## 🔍 Why This Project Is Ideal
 | Benefit                | Why it matters                                      |
 |------------------------|-----------------------------------------------------|
-| 💼 Career-Relevant     | Resume relevance shows direct personal ROI          |
-| 🧠 Uses Core GenAI     | Prompting, text comparison, summarization           |
-| 🔄 Full Stack          | Frontend, backend, OpenAI API, DB                   |
-| ☁️ Azure Ready         | Azure OpenAI, Cosmos DB NoSQL, App Service          |
-| 📄 Impressive on Resume| Practical + shows AI knowledge and system design    |
+| 🧠 Uses Core GenAI     | Prompting, text comparison, summarization          |
+| 🔄 Full Stack          | Frontend, backend, OpenAI API, DB                  |
+| ☁️ Azure Ready         | Azure OpenAI, Cosmos DB NoSQL, App Service(Concept)|
 
 ## ⚙️ Tech Stack
 | Layer      | Technology                                    |

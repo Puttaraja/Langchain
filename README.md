@@ -44,3 +44,4 @@
 
  ## Hosted in Render
  - https://langchain-121j.onrender.com
+ - From client, above hosted end point is called to analyse the Resume.

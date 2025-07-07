@@ -29,7 +29,7 @@ const ResumeForm = ({ setOutput }) => {
     formData.append("job_description", jobDescription);
 
     try {
-      const response = await fetch("http://localhost:8000/api/review", {
+      const response = await fetch("https://langchain-121j.onrender.com/api/review", {
         method: "POST",
         body: formData,
       });

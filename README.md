@@ -12,7 +12,7 @@
 | 💼 Career-Relevant     | Resume relevance shows direct personal ROI          |
 | 🧠 Uses Core GenAI     | Prompting, text comparison, summarization           |
 | 🔄 Full Stack          | Frontend, backend, OpenAI API, DB                   |
-| ☁️ Azure Ready         | Azure OpenAI, Cosmos DB, App Service                |
+| ☁️ Azure Ready         | Azure OpenAI, Cosmos DB NoSQL, App Service          |
 | 📄 Impressive on Resume| Practical + shows AI knowledge and system design    |
 
 ## ⚙️ Tech Stack
@@ -21,7 +21,7 @@
 | Frontend   | React (Resume upload + results UI)            |
 | Backend    | Python + FastAPI, pdfplumber                  |
 | GenAI      | Azure OpenAI (GPT-4o)                         |
-| Database   | Azure Cosmos DB (Store resumes + suggestions) |
+| Database   | Azure Cosmos DB NoSQL to store the data       |
 | Hosting    | Azure App Service / Static Web Apps           |
 
 ## 🧪 Features (Step-by-Step)

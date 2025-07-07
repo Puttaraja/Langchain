@@ -1,10 +1,20 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import "./ResumeAnalyzer.css";
 
 const ResumeAnalyzer = ({ output }) => {
   return (
-    <div style={{ padding: "2rem", whiteSpace: "pre-wrap" }}>
-      <h2>📋 Resume Review Result</h2>
-      <p>{output || "No result available."}</p>
+    <div className="analyzer-container">
+      <h2 className="analyzer-title">📋 Resume Review Result</h2>
+
+      <div className="analyzer-box">
+        {output ? (
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{output}</ReactMarkdown>
+        ) : (
+          <p>No result available.</p>
+        )}
+      </div>
     </div>
   );
 };

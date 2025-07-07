@@ -6,9 +6,8 @@ cd server2
 ## 🧪 Step 2: Create and Activate Virtual Environment
 python -m venv venv
 venv\Scripts\activate  # For Windows
-
-# or use below for macOS/Linux
-# source venv/bin/activate
+or use below for macOS/Linux
+source venv/bin/activate
 
 ## 📦 Step 3: Install Required Dependencies
 pip install -r requirement.txt --no-user

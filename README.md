@@ -38,3 +38,6 @@
  ## 📦 Project Setup 
  - Client Side Set Up: refer Langchain/client/README.md
  - Server Side Set Up: refer Langchain/server2/setup.md
+
+ ## ✅ Model Response
+ - Refer Langchain/Resume Review Result.pdf

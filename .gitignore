@@ -1,0 +1,75 @@
+# ---------------------
+# Global Node/React Ignore
+# ---------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---------------------
+# Frontend: React (client/)
+# ---------------------
+client/node_modules/
+client/build/
+client/dist/
+client/.env
+client/.env.*.local
+
+# ---------------------
+# Backend: Node.js (server/)
+# ---------------------
+server/node_modules/
+server/.env
+server/.env.*.local
+
+# Build Artifacts
+server/dist/
+server/build/
+
+# Ignore Python bytecode
+server2/__pycache__/
+server2/services/__pycache__
+server2/**/*.py[cod]
+
+# Ignore virtual environment
+server2/venv/
+
+# Ignore environment variables
+server2/.env
+
+# Ignore editor settings
+server2/.vscode/
+server2/.idea/
+
+# Ignore OS and backup files
+server2/*.log
+server2/.DS_Store
+server2/Thumbs.db
+server2/*.bak
+server2/*.tmp
+server2/*.swp
+
+# Ignore dist/egg files (if packaging later)
+server2/build/
+server2/dist/
+server2/*.egg-info/
+
+# Ignore Jupyter checkpoints if using later
+server2/.ipynb_checkpoints/
+
+.venv
+

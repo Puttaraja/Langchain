@@ -18,7 +18,7 @@ const ResumeForm = ({ onSubmit }) => {
 
     const formData = new FormData();
     formData.append("resume", resumeFile);
-    formData.append("jobDescription", jobDescription);
+    formData.append("job_description", jobDescription);
     onSubmit(formData);
   };
 

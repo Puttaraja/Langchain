@@ -5,8 +5,8 @@ function App() {
   const [result, setResult] = useState(null);
 
   const handleSubmit = async (formData) => {
-    try {
-      const response = await fetch("http://localhost:5000/api/review", {
+    try {  
+      const response = await fetch("http://localhost:8000/api/review", {
         method: "POST",
         body: formData,
       });

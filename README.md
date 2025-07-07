@@ -22,7 +22,7 @@
 | Backend    | Python + FastAPI, pdfplumber                  |
 | GenAI      | Azure OpenAI (GPT-4o)                         |
 | Database   | Azure Cosmos DB NoSQL to store the data       |
-| Hosting    | Azure App Service / Static Web Apps           |
+| Hosting    | Render for backend                            |
 
 ## 🧪 Features (Step-by-Step)
 - Upload Resume (PDF or Text)
@@ -41,3 +41,6 @@
 
  ## ✅ Model Response
  - Refer Langchain/Resume Review Result.pdf
+
+ ## Hosted in Render
+ - https://langchain-121j.onrender.com

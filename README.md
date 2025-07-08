@@ -16,12 +16,11 @@
 ## ⚙️ Tech Stack
 | Layer      | Technology                                    |
 |------------|-----------------------------------------------|
-| Frontend   | React (Resume upload + results UI)            |
-| Backend    | Python + FastAPI, pdfplumber                  |
-| GenAI      | Azure OpenAI (GPT-4o)                         |
+| Frontend   | React (Resume upload + results UI), React Router, Lottie   |
+| Backend    | Python + FastAPI, pdfplumber, multiPart                 |
+| GenAI      | Azure OpenAI (Chat Completions API with GPT-4o), , prompt engineering(Basic)                         |
 | Database   | Azure Cosmos DB NoSQL to store the data       |
-| Hosting    | Render for backend                            |
-
+| DevOps     | GitHub, Render (for hosting), .env config with dotenv |
 ## 🧪 Features (Step-by-Step)
 - Upload Resume (PDF or Text)
 - Paste Job Description
